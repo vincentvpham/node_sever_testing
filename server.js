@@ -71,7 +71,7 @@ app.get('/api/events/setTimeout/',
   }
 );
 
-app.get('/api/events/callback/sleep',
+app.get('/api/events/callback/sleep/',
   function(req, res) {
     sleep.sleep(1);
     fs.readFile(filePath, 'utf-8', function(err, data) {
@@ -86,7 +86,7 @@ app.get('/api/events/callback/sleep',
   }
 );
 
-app.get('/api/events/promise/sleep',
+app.get('/api/events/promise/sleep/',
   function(req, res) {
     sleep.sleep(1);
     readfileP()
@@ -101,7 +101,7 @@ app.get('/api/events/promise/sleep',
   }
 );
 
-app.get('/api/events/setTimeout/sleep',  
+app.get('/api/events/setTimeout/sleep/',  
   function(req, res) {
     sleep.sleep(1);
     setTimeout(function() {
